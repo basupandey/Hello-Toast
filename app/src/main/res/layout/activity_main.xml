@@ -8,35 +8,37 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_toast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TOAST"
+        android:text="@string/button_label_toast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.057"
+        android:onClick="showToast"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="COUNT"
+        android:text="@string/button_label_count"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintTop_toTopOf="@+id/button_toast"
+        app:layout_constraintVertical_bias="0.905"
+        android:onClick="countUp"/>
 
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="0"
+        android:text="@string/count_initial_value"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="160sp"
